@@ -1,11 +1,13 @@
 
-/* Background */
-
 body {
 	background-color:#e0e0e0;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+a {
+    color: rgb(51, 59, 66);
 }
 
 /* Header bar */
@@ -26,6 +28,7 @@ header {
 #title_text {
     margin-top: 24px;
     margin-bottom: 24px;
+    margin-right: 10px;
 }
 
 .navbar {
@@ -51,7 +54,8 @@ header {
 
 /* Text Boxes */
 .section_row {
-	display:flex;
+    display:flex;
+    justify-content: left;
 }
 
 .section_column_text, .section_column_image {
@@ -62,7 +66,7 @@ section {
 	text-align: left;
 	background-color: white;	
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 1.5;
 	border-radius: 5px;
 	margin-top: 20px;
@@ -95,7 +99,6 @@ section {
 
 
 /* Bottom Table */
-
 table, th, td {
 	border: 1px solid black;
 	text-align:center;
@@ -113,8 +116,7 @@ th {
 }
 
 /* Image Formatting */
-
-img {
+.img_frame {
 	border: 20px solid white;
 	border-radius: 5px;
 	max-width: 50%;
@@ -124,6 +126,10 @@ img {
 	margin-right: auto;
 	margin-top:0px;
 	box-shadow: 5px 5px 5px grey;
+}
+
+.img_smaller {
+    max-width: 50%;
 }
 
 #bh_image {
@@ -136,4 +142,3 @@ img {
 	padding-top: 10px;
 	padding-bottom:10px;
 }
-
