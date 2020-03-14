@@ -88,7 +88,7 @@ section {
 	max-width:40%;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:40px;
+	margin-top:50px;
 	margin-bottom:30px;
 	padding-top: 10px;
 	padding-bottom:10px;
@@ -133,7 +133,7 @@ th {
 }
 
 .img_larger {
-    max-width: 70%;
+    max-width: 75%;
 }
 
 #bh_image {
