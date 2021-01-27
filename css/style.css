@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: rgb(51, 59, 66);
+  color: rgb(51, 59, 66);
 }
 
 /* Header bar */
@@ -51,11 +51,11 @@ header {
 
 .navlink {
 	font-size: 24px;
-    color: white;
+  color: white;
 	font-family: 'Open Sans', sans-serif; 
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none; 
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none; 
 }
 
 /* Text Boxes */
@@ -149,6 +149,6 @@ th {
 
 .section_column_image {
 	margin-top:10px;
-    padding-top: 10px;
+  padding-top: 10px;
 	padding-bottom:10px;
 }
