@@ -1,192 +1,193 @@
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 
 body {
-	background-color:#e0e0e0;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+  background-color: #e0e0e0;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 a {
   color: rgb(51, 59, 66);
-	font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* Header bar */
 header {
-	text-align: center;
-	background-color: #002B36;
-	font-family: 'IBM Plex Serif', serif; 
-	font-size: 2em;
-	color: white;
-	padding: 0.1em;
-	margin-top: 0px;
-	max-width: 100%;
-	box-shadow: 0.1em 0.1em 0.1em grey;
+  text-align: center;
+  background-color: #002B36;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 2em;
+  color: white;
+  padding: 0.1em;
+  margin-top: 0px;
+  max-width: 100%;
+  box-shadow: 0.1em 0.1em 0.1em grey;
 }
 
 #title_text {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 0.7em;
-		font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 0.7em;
+  font-size: 1.1em;
 }
 
 #github_logo {
-	max-height:1em;
-	object-fit: contain;
+  max-height: 1em;
+  object-fit: contain;
 }
 
 .navbar {
-	text-align: center;
-  background-color: #00171d;	
-	color: white;
-	margin-right: 0em;
-	margin-left: 0em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 0em;
-	padding-right: 0em;
-	margin-top: 0px;
-	max-width: 100%;
-	left:0px;
-	right:0px;
-	box-shadow: 0.1em 0.1em 0.1em grey;
+  text-align: center;
+  background-color: #00171d;
+  color: white;
+  margin-right: 0em;
+  margin-left: 0em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-top: 0px;
+  max-width: 100%;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0.1em 0.1em 0.1em grey;
 }
 
 .navlink {
   color: white;
-	font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'IBM Plex Sans', sans-serif;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* Text Boxes */
 .section_main {
-    display:flex;
-    justify-content: left;
-    flex-direction: column;
-		padding: 1em;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 1em;
 }
 
 .subsection {
-    display:flex;
-    justify-content: left;
-    flex-direction: column-reverse;
+  display: flex;
+  justify-content: left;
+  flex-direction: column-reverse;
 }
 
 .section_column_image {
-	display: flex;
-	flex-direction: row;	
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.section_column_text, .section_column_image {
-	flex:50%;
+.section_column_text,
+.section_column_image {
+  flex: 50%;
 }
 
 section {
-	text-align: left;
-	background-color: white;	
-	font-family: 'IBM Plex Sans', sans-serif;
-	line-height: 1.5;
-	border-radius: 0.1em;
-	margin-top: 1.2em;
-	margin-bottom:1em;
-	margin-left: 1em;
-	margin-right:1em;
-	padding: 1rem;
-	box-shadow: 0.15em 0.15em 0.15em grey;
+  text-align: left;
+  background-color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.5;
+  border-radius: 0.1em;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1rem;
+  box-shadow: 0.15em 0.15em 0.15em grey;
 }
 
-section > p {
-	margin-top: 0;
-	margin-bottom: 0.5em;
+section>p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .subheader {
-	background-color: white;	
-	margin-top: 2em;
-	text-align:center;
-	max-width:80%;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top: 0.7em;
-	padding-bottom: 0.7em;
-	padding-left: 1em;
-	padding-right:1em;
+  background-color: white;
+  margin-top: 2em;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: 'IBM Plex Sans', sans-serif;
-	box-shadow: 0.15em 0.15em 0.15em grey;
+  box-shadow: 0.15em 0.15em 0.15em grey;
 }
 
-.subheader > h1 {
-	font-size: 1.2em;
+.subheader>h1 {
+  font-size: 1.2em;
 }
 
-.subheader > h2 {
-	font-size: 1em;
+.subheader>h2 {
+  font-size: 1em;
 }
 
 /* Image Formatting */
 .img_frame {
-	border: 0.5em solid white;
-	border-radius: 0.2em;
-	display:block;
-	margin:0.5em;
-	box-shadow: 0.15em 0.15em 0.15em grey;
+  border: 0.5em solid white;
+  border-radius: 0.2em;
+  display: block;
+  margin: 0.5em;
+  box-shadow: 0.15em 0.15em 0.15em grey;
 }
 
 .img_smaller {
-    max-width: 30%;
+  max-width: 30%;
 }
 
 .img_larger {
-    max-width: 75%;
+  max-width: 75%;
 }
 
 #bh_image {
-	max-width: 50%;
-	object-fit: cover;
+  max-width: 50%;
+  object-fit: cover;
 }
 
 .section_column_image {
-	margin-top:1em;
+  margin-top: 1em;
   padding-top: 1em;
-	padding-bottom:1em;
-	justify-content: center;
+  padding-bottom: 1em;
+  justify-content: center;
 }
 
 .portfolio_item {
-	border-top: 2px solid darkgray;
-	margin-top: 2em;
+  border-top: 2px solid darkgray;
+  margin-top: 2em;
 }
 
 @media (min-width:961px) {
-	.section_main {
-		flex-direction: row;
-	}
+  .section_main {
+    flex-direction: row;
+  }
 
-	.section_column_text {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items:inherit;
-	}
+  .section_column_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+  }
 
-	.section_column_image {
-		flex-direction: column;
-		justify-content: left;
-		align-items: center;
-		padding: 0;
-		max-height: 50%;
-	}
-	
-	.video_frame {
-		align-self: stretch;
-		min-height: 90%;
-	}
+  .section_column_image {
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+    max-height: 50%;
+  }
+
+  .video_frame {
+    align-self: stretch;
+    min-height: 90%;
+  }
 }
