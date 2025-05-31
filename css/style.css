@@ -53,7 +53,7 @@ img.title-icon {
 }
 
 img.medium {
-    height: 30dvh;
+    height: 30svh;
     object-fit: contain;
     margin: 0.5em;
 }
@@ -121,6 +121,7 @@ details > summary {
     padding: 0;
     width: 100svw;
     max-width: 100svw;
+    max-height: 100svh;
     display: grid;
     overflow-x: hidden;
     grid-template-columns: 1fr [content-col] 8fr 1fr;
