@@ -1,193 +1,281 @@
-html {
-  font-size: 16px;
+/* General elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
 
-body {
-  background-color: #e0e0e0;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 a {
-  color: rgb(51, 59, 66);
-  font-family: 'IBM Plex Sans', sans-serif;
+    color: #364fc7;
 }
 
-/* Header bar */
-header {
-  text-align: center;
-  background-color: #002B36;
-  font-family: 'IBM Plex Serif', serif;
-  font-size: 2em;
-  color: white;
-  padding: 0.1em;
-  margin-top: 0px;
-  max-width: 100%;
-  box-shadow: 0.1em 0.1em 0.1em grey;
+/* Image classes */
+img.profile {
+    display: inline-block;
+    height: 100%;
+    padding: 1em;
+    object-fit: cover;
+    clip-path: circle(40%);
+    padding: 0.2em;
 }
 
-#title_text {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 0.7em;
-  font-size: 1.1em;
+img.title-icon {
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    vertical-align: -0.125em;
+    filter: invert(95%);
+    transform: rotate(0deg);
+    transition: 0.350s cubic-bezier(0.42, 1.67, 0.21, 0.90);
 }
 
-#github_logo {
-  max-height: 1em;
-  object-fit: contain;
+img.medium {
+    height: 30dvh;
+    object-fit: contain;
+    margin: 0.5em;
 }
 
-.navbar {
-  text-align: center;
-  background-color: #00171d;
-  color: white;
-  margin-right: 0em;
-  margin-left: 0em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0em;
-  padding-right: 0em;
-  margin-top: 0px;
-  max-width: 100%;
-  left: 0px;
-  right: 0px;
-  box-shadow: 0.1em 0.1em 0.1em grey;
+img.large {
+    max-width: 30cqw;
+    object-fit: contain;
+    margin: 0.5em;
 }
 
-.navlink {
-  color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  text-decoration: none;
+img.larger {
+    max-width: 60cqw;
+    object-fit: contain;
+    margin: 0.5em;
 }
 
-/* Text Boxes */
-.section_main {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  padding: 1em;
+/* IFrame classes */
+iframe.larger {
+    width: 60cqw;
+    height: calc(60cqw * (9 / 16));
 }
 
-.subsection {
-  display: flex;
-  justify-content: left;
-  flex-direction: column-reverse;
+iframe.large {
+    width: 30cqw;
+    height: calc(30cqw * (9 / 16));
 }
 
-.section_column_image {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+/* Details + summary popup styling */
+details summary::-webkit-details-marker {
+    display: none;
 }
 
-.section_column_text,
-.section_column_image {
-  flex: 50%;
+details summary>img.bullet-point {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.5em;
+    vertical-align: -0.125em;
+    filter: invert(14%) sepia(62%) saturate(3742%) hue-rotate(232deg) brightness(74%) contrast(102%);
+    transform: rotate(0deg);
+    transition: 0.350s cubic-bezier(0.42, 1.67, 0.21, 0.90);
 }
 
-section {
-  text-align: left;
-  background-color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
-  line-height: 1.5;
-  border-radius: 0.1em;
-  margin-top: 1.2em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: 1rem;
-  box-shadow: 0.15em 0.15em 0.15em grey;
+details {
+    transition: 0.350s cubic-bezier(0.42, 1.67, 0.21, 0.90);
 }
 
-section>p {
-  margin-top: 0;
-  margin-bottom: 0.5em;
+details[open] summary img.bullet-point {
+    transform: rotate(90deg);
 }
 
-.subheader {
-  background-color: white;
-  margin-top: 2em;
-  text-align: center;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-family: 'IBM Plex Sans', sans-serif;
-  box-shadow: 0.15em 0.15em 0.15em grey;
+details > * {
+    margin-left: 1em;
 }
 
-.subheader>h1 {
-  font-size: 1.2em;
-}
-
-.subheader>h2 {
-  font-size: 1em;
-}
-
-/* Image Formatting */
-.img_frame {
-  border: 0.5em solid white;
-  border-radius: 0.2em;
-  display: block;
-  margin: 0.5em;
-  box-shadow: 0.15em 0.15em 0.15em grey;
-}
-
-.img_smaller {
-  max-width: 30%;
-}
-
-.img_larger {
-  max-width: 75%;
-}
-
-#bh_image {
-  max-width: 50%;
-  object-fit: cover;
-}
-
-.section_column_image {
-  margin-top: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  justify-content: center;
-}
-
-.portfolio_item {
-  border-top: 2px solid darkgray;
-  margin-top: 2em;
-}
-
-@media (min-width:961px) {
-  .section_main {
-    flex-direction: row;
-  }
-
-  .section_column_text {
+details > summary {
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: inherit;
-  }
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-  .section_column_image {
-    flex-direction: column;
+/* General container for a single column layout with a titlebar and content */
+.container {
+    padding: 0;
+    width: 100svw;
+    max-width: 100svw;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 1fr [content-col] 8fr 1fr;
+    grid-template-rows: [header] 10svh [main-content] auto;
+    background: #f1f3f9;
+}
+
+/* Used to manage groups of images */
+.img-container {
+    margin: 0;
+    width: 100%;
+    min-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+/* Titlebar */
+header.title {
+    grid-row: header;
+    grid-column: content-col;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: linear-gradient(to right, #0575e6, #021b79);
+    border-radius: 20px;
+}
+
+header.title>.title-left {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
-    padding: 0;
-    max-height: 50%;
-  }
+    color: white;
+}
 
-  .video_frame {
-    align-self: stretch;
-    min-height: 90%;
-  }
+header.title>.title-right {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.title>h1 {
+    padding: 0.2em;
+}
+
+/* Main content */
+.content {
+    min-width: 0;
+    max-width: 100%;
+    grid-column: content-col;
+    grid-row: main-content;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.content-card {
+    max-width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 1em;
+    background: #cdd8f8;
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.content-card > h3 {
+    font-size: 2em;
+}
+
+@media all and (max-height: 500px) {
+    .container {
+        grid-template-rows: [header] 20svh [main-content] auto;
+        grid-template-columns: 0 [content-col] 1fr 0;
+        margin: 0;
+    }
+
+    header.title {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.25em;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .container {
+        grid-template-columns: 0 [content-col] 1fr 0;
+        margin: 0;
+    }
+
+    img.medium {
+        width: 80lvw;
+        height: auto;
+        object-fit: contain;
+        margin: 0.5em;
+    }
+
+    header.title {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.25em;
+    }
+
+    header.title>.title-left {
+        height: 75%;
+    }
+
+    img.large {
+        width: 100cqw;
+        object-fit: contain;
+        margin: 0.2em;
+    }
+
+    img.title-icon {
+        height: 2em;
+        width: 2em;
+    }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .container {
+        background-color: #121212;
+    }
+
+    a {
+        color: #74c0fc;
+    }
+
+    details summary>img.bullet-point {
+        filter: invert(26%) sepia(94%) saturate(1944%) hue-rotate(197deg) brightness(98%) contrast(96%);
+    }
+
+    .content {
+        color: #ced4da;
+    }
+
+    .content-card {
+        background-color: rgb(206, 216, 248, 8%);
+    }
 }

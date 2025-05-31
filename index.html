@@ -2,73 +2,276 @@
 <html lang="en">
 
 <head>
-	<title>Home - James Plante</title>
+	<title>Jim Plante</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif:wght@500&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="icon" type="image x/icon" href="/favicon.ico" />
 	<!-- For Mastodon verification -->
 	<link rel="me" href="https://mastodon.social/@jwplante" />
 </head>
 
-<body>
-	<header id='main_header'>
-		<h1 id='title_text'>James Plante <a href="https://github.com/jwplante"><img src="/media/github-logo.png"
-					id="github_logo" alt="My GitHub page" height="36" width="36"></img></a></h1>
-	</header>
-
-	<nav class="navbar">
-		<strong><a class="navlink" href="/" alt="Home">HOME</a></strong>
-		<a class="navlink" href="/html/projects.html" alt="Projects">PROJECTS</a>
-		<a class="navlink" href="/html/contact.html" alt="Contact">CONTACT</a>
-	</nav>
-
-	<!-- First section -->
-	<div class="section_main">
-		<!-- Left Column -->
-		<div class="section_column_image">
-			<img class="img_frame img_smaller" src='/media/grad.jpg' alt='My portrait'>
-			<img class="img_frame img_smaller" src='/media/grad2.jpg' id='bh_image'
-				alt='Photo at graduation with Laurie Leshin handing diploma.'>
+<body class="container">
+	<header class="title">
+		<div class="title-left">
+			<img class="profile" src="/media/grad-cropped.jpg">
+			<h1>Jim Plante</h1>
 		</div>
-		<!-- Right Column -->
-		<section class="section_column_text">
+		<div class="title-right">
+			<a href='mailto:jameswilliamplante@gmail.com'>
+				<img src="media/icons/email.svg" class="title-icon" />
+			</a>
+			<a href='https://www.linkedin.com/in/jplante/'>
+				<img src="media/icons/linkedin.svg" class="title-icon" />
+			</a>
+			<a href="https://bsky.app/profile/jwplante.com">
+				<img src="media/icons/bsky-icon.svg" class="title-icon" />
+			</a>
+			<a rel="me" href="https://mastodon.social/@jwplante">
+				<img src="media/icons/mastodon.svg" class="title-icon" />
+			</a>
+		</div>
+	</header>
+	<main class="content">
+		<details open>
+			<summary>
+				<img class="bullet-point" src="media/icons/arrow.svg" />
+				<h2>About</h2>
+			</summary>
+			<div class="img-container">
+				<img class="medium" src="media/P8.jpg" />
+				<img class="medium" src="media/grad2.jpg" />
+				<img class="medium" src="media/cookies.jpg" />
+			</div>
 			<p>
-				Hello! My name is James Plante and am a recent graduate of Worcester Polytechnic Institute with
-				a Master's of Computer Science. My main goal in being a software developer is to explore our increasingly
-				interconnected world through software and make impactful software that solves real-world problems.
+				Howdy! 👋 I am a full-stack software developer currently residing in Connecticut (Hartford area) and
+				work at <a href="https://www.lectra.com/en">Lectra</a>. My alma mater is Worcester Polytechnic Institute in Worcester, MA where I 
+				pursued and earned a bachelor's and master's degree in Computer Science and worked as a TA (teaching assistant) for various 
+				introductory and mid-level courses. I have experience with many languages and framework, although 
+				I currently use a combination of .NET (5+ and Framework), TypeScript with React, Python, 
+				Kotlin, and Java depending on what I am working on at the moment. In sum, I am constantly learning and 
+				hope to keep learning about new ways to solve problems using code.
 			</p>
 			<p>
-				Here is a selection of Computer Science courses I have taken in the past:
-			<ul>
-				<li><b>CS2303:</b> Systems Programming Concepts</li>
-				<li><b>CS2011:</b> Introduction to Machine Organization and Assembly Language</li>
-				<li><b>CS3013:</b> Operating Systems</li>
-				<li><b>CS3041:</b> Human-Computer Interaction</li>
-				<li><b>CS3516:</b> Computer Networks</li>
-				<li><b>CS4241:</b> Webware</li>
-				<li><b>CS4233:</b> Object-Oriented Analysis and Design</li>
-				<li><b>CS4432:</b> Database Systems II</li>
-				<li><b>CS509:</b> Design of Software Systems</li>
-				<li><b>CS584:</b> Algorithms: Design and Analysis</li>
-				<li><b>CS5003:</b> Foundations of Computer Science: An Introduction</li>
-				<li><b>CS4516:</b> Introduction to Artificial Intelligence</li>
-				<li><b>CS4513:</b> Distributed Computing Systems</li>
-				<li><b>CS585:</b> Big Data Management</li>
-				<li><b>CS573:</b> Data Visualization</li>
-			</ul>
+				I also like to solve puzzles, learning to cook/bake, and reading so you may see some of that
+				content when viewing my socials.
 			</p>
+		</details>
+		<details>
+			<summary>
+				<img class="bullet-point" src="media/icons/arrow.svg" />
+				<h2>Projects</h2>
+			</summary>
 			<p>
-				Please feel free to check out my GitHub account by clicking on the Octocat logo on the
-				header bar, or take a look at my portfolio by clicking on the "Projects" tab on the top
-				of the page.
+				Here is a brief list of some past projects that I have worked on.
 			</p>
-		</section>
-	</div>
-</body>
 
+			<section class="content-card">
+				<h3 id='language-explorer'>Language Explorer Website</h2>
+					<iframe title="Video Demo" class="larger" src="https://www.youtube.com/embed/u3QERUBHgT8"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<p>
+						Developed a novel website in a two-person group that allows users to explore languages
+						in the Austroasiatic language family through a hand-compiled dataset. The frontend was
+						developed
+						in TypeScript and JavaScript with the React and and d3 libraries. The minimal backend
+						was
+						developed in Express and Node.js.
+						This was a final project for CS573: Data Visualization.
+					</p>
+					<p>
+						Link to the repository and associated writeup is provided below.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://raw.githubusercontent.com/jwplante/datavis-final/main/Process_book.pdf'>Final
+							Write-up</a><br>
+						<a href='https://github.com/jwplante/datavis-final'>Code</a><br>
+					</p>
+			</section>
+			<section class='content-card'>
+				<h3 id='stadia-mqp'>Improving User Experience with Latency Compensation for Cloud Gaming Services using
+					Google Stadia</h2>
+					<iframe title="Catalyst Alphafest Trailer" class="larger"
+						src="https://www.youtube.com/embed/tcYU01nz2XA" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<p>
+						Developed a multiplayer capture-the-flag first-person shooter game in a
+						five-person team using Unreal Engine 4 called <strong>Catalyst</strong>.
+						The game was developed as part of a study assessing ways to improve
+						player experience in high-latency situations for cloud gaming platforms
+						and was developed for and evaluated using Google Stadia.
+					</p>
+					<p>
+						The game takes place in the far
+						future where a fictional organization named the Alpha Federation caused the world to
+						end due to specialized nuclear missiles. Due to the effects of the elemental nuclear
+						payloads, the survivors of the new world gained abilities to control the basic elements
+						unleashed by these weapons. Ten years later, a tournament was announced by the
+						remnants of the Alpha Federation, calling upon the best and brightest warriors to combat
+						each other in a pseudo-gladiatorial team-based showdown. The grand prize is access to
+						the
+						Alpha Federation’s nearly unlimited resources, fame, and glory.
+					</p>
+					<p>
+						Link to the final paper is provided below in addition to public builds and trailers
+						hosted at
+						various
+						WPI events where it was shown off and playtested. The work and results are also included
+						in a
+						paper featured at
+						QoMEX 2022 linked below.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://digital.wpi.edu/concern/student_works/xd07gw617'>Final MQP
+							Paper</a><br>
+						<a href='https://web.cs.wpi.edu/~claypool/papers/game-scale-qomex-22/'>QoMEX
+							Paper</a><br>
+						<a href='https://wp.wpi.edu/showfest/project/catalyst/'>Showfest Page (with Final Public
+							Build)</a><br>
+						<a href='https://wp.wpi.edu/alphafest/project/catalyst/'>Alphafest Page (with Alpha
+							Build)</a><br>
+					</p>
+			</section>
+
+			<section class="content-card">
+				<h3 id='streambot'>StreamBot</h2>
+					<img class="large" alt="Screenshot of Streambot" src='/media/streambot_screenshot.png'>
+					<p>
+						Developed a Discord bot in a three-person team that allows
+						users to search,
+						queue, vote for, and play YouTube videos in a
+						voice channel for the Hack@WPI 2020 hackathon. It is written
+						using Python 3 and the discord.py, YouTube Search, and
+						youtube-dl libraries. The project is nearly feature-complete
+						except for a mechanism to automatically play the next
+						track. The project is licensed under the MIT License for others
+						to add to and tinker with.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://devpost.com/software/streambot'>DevPost</a><br>
+						<a href='https://github.com/jwplante/streambot'>Source Code</a><br>
+					</p>
+			</section>
+
+			<section class="content-card">
+				<h3 id='acadia-visitor-study'>Acadia Visitor Study</h2>
+					<img class='large' alt="Screenshot of Acadia Visitor Study" src='/media/acadia_screenshot.png'>
+					<p>
+						Created an application in a two-person team intended to
+						track visitor movements throughout Acadia
+						National Park, which was then sent to a mySQL/MariaDB database for further
+						analysis in an effort to reduce overcrowding in the park. Assessed
+						the viability of this data collection method by tracking WPI students as they
+						hiked throughout the park. Afterwards, our group created three recommendations
+						for the park to use.
+					</p>
+					<p>
+						Main responsibilities included development in Android Studio, writing the back-end
+						server
+						in PHP and creating Python scripts to convert the data into a
+						usable format for Google Earth and ArcGIS.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://digitalcommons.wpi.edu/iqp-all/5539/'>Full Report</a><br>
+						<a href='https://github.com/jwplante/Acadia-Visitor-Study'>Source Code</a>
+					</p>
+			</section>
+
+			<section class="content-card">
+				<h3 id='ajaja-games'>AJAJA Games Website</h2>
+
+					<img class="larger" alt="Screenshot of main page from AJAJA Games"
+						src='/media/ajaja_games_screenshot.png'>
+					<p>
+						Created a website hosting miniature strategy and arcade games
+						built using the Phaser library in JavaScript and Express as a
+						final project for CS4241: Webware in a five-person team. The site
+						also supports leaderboards to store high scores using Google Firebase.
+						The site also supports OAuth authentication, so you can log in
+						using an existing online account. There are nine games in total,
+						so feel free to try them out!
+					</p>
+					<p>
+						Responsibilities included creating a clone of
+						Breakout in JavaScript (Brick Destroyer on the site) and deploying the
+						site using Glitch.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://ajaja-games.glitch.me/'>Website</a><br>
+						<a href='https://github.com/jwplante/fp'>Source Code</a>
+					</p>
+			</section>
+
+			<section class="content-card">
+				<h3 id='softeng-project'>Video Streaming Site with AWS</h2>
+					<img class="large" alt="Screenshot of video from a remote site"
+						src='/media/softeng_screenshot.png'>
+					<p>
+						Developed a website for users to upload video clips (mainly consisting of clips of Star Trek
+						TOS)
+						and create playlists using AWS (in Java) for the back-end and React in the front-end as a part
+						of a five-person team for CS3733: Software Engineering. An administrator interface was created
+						in
+						order to manage user
+						uploads and add remote sites.
+					</p>
+					<p>
+						Additionally a remote API was created and made available for other sites to access.
+						The website is currently not currently online due to hosting costs.
+					</p>
+					<p>
+						Responsibilities included creating AWS Lambda functions in Java,
+						writing unit tests, and work on the search functionality on the website.
+					</p>
+					<p>
+						<strong>Links:</strong><br>
+						<a href='https://github.com/jwplante/cs3733-indefatigable-backend'>Back-end Source
+							Code</a><br>
+						<a href='https://github.com/jwplante/cs3733-indefatigable-frontend'>Front-end Source
+							Code
+							(Participant View)</a><br>
+						<a href='https://github.com/rfdolan/cs3733-indefatigable-admin'>Front-end Source Code
+							(Admin
+							View)</a>
+					</p>
+			</section>
+
+			<section class="content-card">
+				<h3 id='midday-commander'>Midday Commander</h2>
+					<img class="larger" alt="Screenshot from Midday Commander" src='/media/midday_screenshot.png'>
+					<p>
+						Created a command-line application to launch and manage Linux processes
+						as part of CS3013: Operating Systems. The
+						application is written in C and can also launch background
+						processes that will execute asynchronously. This project was
+						created in a two-person team.
+					</p>
+					<p>
+						This project is currently not on GitHub due to it being a
+						class project.
+					</p>
+			</section>
+		</details>
+		<details>
+			<summary>
+				<img class="bullet-point" src="media/icons/arrow.svg" />
+				<h2>Contact</h2>
+			</summary>
+			<p>
+				Please feel free to contact me using the buttons at the top-right of the page.
+			</p>
+		</details>
+	</main>
+</body>
 </html>
